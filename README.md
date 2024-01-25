@@ -2,6 +2,8 @@
 ## ABOUT C++ PROGRAMMING LANGUAGE
 - C++ developed in 1979
 - In 1979, Bjarne Stroustrup, a Danish computer scientist, began work on "C with Classes", the predecessor to C++.
+- C++ gives programmers a high level of control over system resources and memory.
+- The language was updated 4 major times in 2011, 2014, 2017, and 2020 to C++11, C++14, C++17, C++20.
 - C++ is a general purpose(it has a wide variety of use cases and is used in large areas.) object-oriented programming language.
 - It is a middle-level langauge, as it encapsulates both high and low level language features.
 - C++ supports both procedural and object oriented programming paradigms. Therefore, C++ is also called a hybrid language.
@@ -15,9 +17,15 @@
 - C++ is used to create games and graphics.
 - C++ is used in ATM machines from which you withdraw cash.
 
- <br> 
+ <br>
 
- ## Let's write some code
+## Difference between C and C++
+- C++ was developed as an extension of C, and both languages have almost the same syntax.
+- The main difference between C and C++ is that C++ support classes and objects, while C does not.
+ <br>
+
+ ## C++ SYNTAX
+ **Let's write some code**
  <br>
  
 ```
@@ -69,7 +77,16 @@
 - Do not forget to add the closing curly bracket } to actually end the main function.
 
 </details>
-  
+
+**Omitting Namespace**
+C++ programs that runs without the standard namespace library. The `using namespace std`  line can be omitted and replaced with the `std` keyword, followed by the `::` operator for some objects.
+```
+#include <iostream>
+int main() {
+  std::cout << "Hello World!";
+  return 0;
+}
+```
 <br>
 
 ## COMMENTS

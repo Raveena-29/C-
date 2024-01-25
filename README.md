@@ -89,6 +89,108 @@ int main() {
 ```
 <br>
 
+## C++ Ouput
+<details>
+<summary>
+  
+- **Print Text**
+</summary>
+  <br>
+  
+  - The `cout` object, together with the `<<` operator, is used to output values/print text:
+  - You can add as many cout objects as you want.
+>[!NOTE]  it does not insert a new line at the end of the output.
+```
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "Hello World!";
+  cout << "I am learning C++";
+  return 0;
+}
+```
+<br>
+
+OUTPUT :
+>Hello World!
+><br>
+>I am learning C++
+</details>
+<br>
+
+<details>
+<summary>
+    
+- **New Lines**
+</summary>
+
+- To insert a newline , use \n character.
+  - EXAMPLE: 
+```
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "Hello World! \n";
+  cout << "I am learning C++";
+  return 0;
+}
+```
+<br>
+
+OUTPUT:
+>Hello World!
+><br>
+>I am learning C++
+
+>[!TIP]: Two \n characters after each other will create a blank line:
+> Example:
+```
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "Hello World! \n\n";
+  cout << "I am learning C++";
+  return 0;
+}
+```
+<br>
+
+OUTPUT:
+>Hello World!
+><br>
+><br>
+>I am learning C++
+<br>
+
+- Another way to insert a new line, is with the end1 manipulator
+  - EXAMPLE:
+```
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "Hello World!" << endl;
+  cout << "I am learning C++";
+  return 0;
+}
+```
+<br>
+
+OUTPUT :
+>Hello World!
+><br>
+>I am learning C++
+<br>
+
+>[!NOTE]
+>Both \n and endl are used to break lines. However, \n is most used.
+
+</details>
+<br>
+
 ## COMMENTS
 - In programming we comment to describe our code or to give some extra details about the code.
 - Programming comments are explanatory statements that you can include in the C++ code.

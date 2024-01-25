@@ -217,7 +217,7 @@ OUTPUT :
 Computer have large memory spaces. But as a programmer , we need to utilize these spaces effectively. Hence, we use the concept of storing stuff in containers. It is similar to how we keep food in containers inside the refrigerator. These Containers make it easy to access the stuff whenever we need it.
 <br>
 
-**Let me introduce you to variables**
+## VARIABLE
 <br>
 Now let's assume you need to store something in your computer memory. For this, you will need a container. In programming , this storage container is called a _variable_.
 <br>
@@ -229,7 +229,13 @@ Similary, we have to provide our storage container (Variable)  a _unique name_ .
 
 Along with that, we also need to mention the _type of value_ it will contain.Eg: words,numbers,etc.
 <br>
-
+- In C++, there are different types of variables (defined with different keywords).
+- For example:
+  - **int** - stores integers (whole numbers), without decimals, such as 123 or -123
+  - **double** - stores floating point numbers, with decimals, such as 19.99 or -19.99
+  - **char** - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
+  - **string** - stores text, such as "Hello World". String values are surrounded by double quotes
+  - **bool** - stores values with two states: true or false
 <details>
   
 <summary> 
@@ -281,4 +287,61 @@ string firstName = john
    **OUTPUT**
    > John
 </details>
+<br>
 
+**Declaring (Creating) Variables**
+<br>
+SYNTAX:
+```
+type variableName = value;
+```
+<br>
+
+**EXAMPLE** :To create a variable that should store a number.
+<br>
+`Create a variable called myNum of type int and assign it the value 15`
+```
+#include <iostream>
+using namespace std;
+
+int main() {
+  int myNum = 15;
+  cout << myNum;
+  return 0;
+}
+```
+OUTPUT :
+>15
+<br>
+
+`Declare a variable without assigning the value, and assign the value later`
+```
+#include <iostream>
+using namespace std;
+int main(){
+    int myNum;
+    myNum = 15;
+    cout << myNum;
+    return 0;
+}
+```
+OUTPUT :
+>15
+<br>
+
+>[!NOTE] If assign a new value to an existing variable, it will overwrite the previous value.
+><br>
+> EXAMPLE :
+```
+#include <iostream>
+using namespace std;
+int main(){
+    int myNum = 15;  // myNum is 15
+    myNum = 10;  // Now myNum is 10
+    cout << myNum;  // Outputs 10
+    return 0;
+}
+```
+> OUTPUT :
+><br>
+>  10

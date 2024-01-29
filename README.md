@@ -63,8 +63,8 @@
 - In our example it will output "Hello World".
   <br>
   
-> [!NOTE]
-> Every C++ statement ends with a semicolon (;)
+>[!NOTE]
+>Every C++ statement ends with a semicolon (;)
 <br>
 
 **Line 5** :
@@ -89,7 +89,7 @@ int main() {
 ```
 <br>
 
-## C++ Ouput
+## C++ OUTPUT
 <details>
 <summary>
   
@@ -99,7 +99,10 @@ int main() {
   
   - The `cout` object, together with the `<<` operator, is used to output values/print text:
   - You can add as many cout objects as you want.
->[!NOTE]  it does not insert a new line at the end of the output.
+<br>
+
+>[!NOTE]
+>it does not insert a new line at the end of the output.
 ```
 #include <iostream>
 using namespace std;
@@ -213,7 +216,7 @@ OUTPUT :
     ```
 <br>
 
-## Container
+## CONTAINER
 Computer have large memory spaces. But as a programmer , we need to utilize these spaces effectively. Hence, we use the concept of storing stuff in containers. It is similar to how we keep food in containers inside the refrigerator. These Containers make it easy to access the stuff whenever we need it.
 <br>
 
@@ -268,7 +271,7 @@ Let's see how to store variable in C++ </summary>
   - **Give the container a label** : _firstName_ (The name we are giving to the container.)
 <br>
 
->  [!TIP] 
+>[!TIP]
 >Make sure that the names that you give to the container should be meaningful!
 
 <br>
@@ -329,9 +332,38 @@ OUTPUT :
 >15
 <br>
 
->[!NOTE] If assign a new value to an existing variable, it will overwrite the previous value.
+`To declare more than one variable of the same type, use a comma-separated list:`
+**EXAMPLE:**
+```
+#include <iostream>
+using namespace std;
+int main(){
+    int x = 5, y = 6, z = 50;
+    cout << x + y + z;
+    return 0;
+}
+```
+<br>
+
+`You can also assign the same value to multiple variables in one line:`
+**EXAMPLE:**
+```
+#include <iostream>
+using namespace std;
+int main(){
+  int x, y, z;
+  x = y = z = 50;
+  cout << x + y + z;
+
+}
+```
+> OUTPUT: 150
+<br>
+
+>[!NOTE]
+>If assign a new value to an existing variable, it will overwrite the previous value.
 ><br>
-> EXAMPLE :
+>EXAMPLE:
 ```
 #include <iostream>
 using namespace std;
@@ -345,3 +377,145 @@ int main(){
 > OUTPUT :
 ><br>
 >  10
+<br>
+
+**EXAMPLE:** A demonstration of other data types:
+<br>
+```
+int myNum = 5;               // Integer (whole number without decimals)
+double myFloatNum = 5.99;    // Floating point number (with decimals)
+char myLetter = 'D';         // Character
+string myText = "Hello";     // String (text)
+bool myBoolean = true;       // Boolean (true or false)
+```
+<br>
+
+**Display Variables**
+<br>
+The cout object is used together with the << operator to display variables.
+<br>
+To combine both text and a variable, separate them with the << operator:
+<br>
+**EXAMPLE:**
+```
+int myAge = 35;
+cout << "I am " << myAge << " years old.";
+```
+<br>
+
+**Add Variables Together**
+<br>
+To add a variable to another variable, you can use the + operator:
+**EXAMPLE:**
+```
+#include <iostream>
+using namespace std;
+int main(){
+  int x = 5;
+  int y = 6;
+  int sum = x + y;
+  cout << sum;
+}
+```
+>OUTPUT: 11
+<br>
+
+## C++ INDENTIFIERS
+- All C++ variables must be identified with unique names.These unique names are called identifiers.
+- Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
+- he general rules for naming variables are:
+  - Names can contain letters, digits and underscores.
+  - Names must begin with a letter or an underscore (_).
+  - Names are case sensitive (myVar and myvar are different variables).
+  - Names cannot contain whitespaces or special characters like !, #, %, etc.
+  - Reserved words (like C++ keywords, such as int) cannot be used as names.
+
+<br>
+
+>[!NOTE]
+>It is recommended to use descriptive names in order to create understandable and maintainable code.
+<br>
+
+**EXAMPLE:**
+```
+// Good
+int minutesPerHour = 60;
+
+// OK, but not so easy to understand what m actually is
+int m = 60;
+```
+<br>
+
+## C++ CONSTANT VARIABLE
+When you do not want others (or yourself) to change existing variable values, use the `const` keyword (this will declare the variable as "constant", which means unchangeable and read-only)
+<br>
+
+**EXAMPLE:**
+```
+const int myNum = 15;         // myNum will always be 15
+myNum = 10;                  // error: assignment of read-only variable 'myNum'
+```
+>[!TIP]
+>You should always declare the variable as constant when you have values that are unlikely to change.
+><br>
+>EXAMPLE:
+>```
+>const int minutesPerHour = 60;
+>const float PI = 3.14;
+>```
+>`When you declare a constant variable, it must be assigned with a value:`
+>
+>EXAMPLE:
+>```
+>//  Like this:
+>const int minutesPerHour = 60;
+><br>
+>//  This however, will not work:
+>const int minutesPerHour;
+>minutesPerHour = 60;       // error
+>```
+<br>
+
+## USER INPUT IN C++
+`cin` is a predefined variable that reads data from the keyboard with the extraction operator `(>>)`.
+<br>
+
+**EXAMPLE:** The user can input a number, which is stored in the variable x. Then we print the value of x.
+```
+#include <iostream>
+using namespace std;
+int main(){
+  int x;
+  cout << "ENTER A NUMBER:";      // Type a number and press enter.
+  cin >> x;                       // Get user input from the keyboard.
+  cout << "YOUR NUMBER IS "<<x;   // Display the input value.
+}
+```
+>OUTPUT :
+```
+ENTER A NUMBER:5
+YOUR NUMBER IS 5
+```
+**Creating a Simple Calculator**
+<br>
+
+**EXAMPLE:** The user must input two numbers. Then print the sum by calculating (adding) the two numbers.
+```
+#include <iostream>
+using namespace std;
+int main(){
+  int x,y,sum;
+  cout<<"Enter first number:";
+  cin >> x;
+  cout<<"Enter second number:";
+  cin >> y;
+  sum=x+y;
+  cout<<"The sum is :"<<sum;
+}
+```
+>OUTPUT
+```
+Enter first number:15
+Enter second number:20
+The sum is :35
+```

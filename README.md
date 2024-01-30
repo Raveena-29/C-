@@ -519,3 +519,58 @@ Enter first number:15
 Enter second number:20
 The sum is :35
 ```
+
+## DATA TYPES
+|**DATA TYPE**|**SIZE**|**DESCRIPTION**|
+|---|---|---|
+|`boolean`|1 byte|Stores true or false values|
+|`char`|1 byte|Stores a single character/letter/number, or ASCII values|
+|`int`|2 or 4 byte|Stores whole numbers, without decimals|
+|`float`|4 byte|	Stores fractional numbers, containing one or more decimals. Sufficient for storing 6-7 decimal digits|
+|`double`|8 byte|Stores fractional numbers, containing one or more decimals. Sufficient for storing 15 decimal digits|
+<br>
+<details>
+<summary>
+  
+  **Numeric Data Type**
+</summary>
+
+- int used to store a whole number without decimals, like 35 or 1000, and float or double when you need a floating point number (with decimals), like 9.99 or 3.14515.
+  <br>
+**int**
+```
+int myNum = 1000;
+cout << myNum;
+
+```
+<br>
+
+**float**
+```
+float myNum = 5.75;
+cout << myNum;
+```
+<br>
+
+**double**
+```
+double myNum = 19.99;
+cout << myNum;
+```
+
+**`float` vs `double`**
+float vs. double
+- The precision of a floating point value indicates how many digits the value can have after the decimal point. The precision of float is only six or seven decimal digits, while double variables have a precision of about 15 digits. Therefore it is safer to use double for most calculations.
+ <br>
+
+**Scientific Numbers**
+<br>
+- A floating point number can also be a scientific number with an "e" to indicate the power of 10.
+- Example:
+```
+float f1 = 35e3;
+double d1 = 12E4;
+cout << f1;
+cout << d1;
+```
+</details>

@@ -574,3 +574,65 @@ cout << f1;
 cout << d1;
 ```
 </details>
+<br>
+
+<details>
+<summary> 
+  
+**Boolean Data type**
+</summary>
+
+- A boolean data type is declared with the `bool` keyword and can only take the values `true` or `false`.
+- When the value is returned, `true = 1` and `false = 0`.
+- Boolean values are mostly used for conditional testing.
+- **EXAMPLE:**
+```
+bool isCodingFun = true;
+bool isFishTasty = false;
+cout << isCodingFun;        // Outputs 1 (true)
+cout << isFishTasty;       // Outputs 0 (false)
+```
+</details>
+<br>
+
+<details>
+<summary>
+
+**Character Data Type**
+</summary>
+
+- The `char` data type is used to store a single character.
+- The character must be surrounded by single quotes, like 'A' or 'c'.
+- **Example:**
+```
+char myGrade = 'B';
+cout << myGrade;
+```
+</details>
+<details>
+<summary>
+
+**String Data Type**
+</summary>
+
+- The string type is used to store a sequence of characters (text).
+- This is not a built-in type, but it behaves like one in its most basic usage.
+- String values must be surrounded by double quotes.
+- **Example:**
+```
+string greeting = "Hello";
+cout << greeting;
+```
+- To use strings, you must include an additional header file in the source code, the `<string>` library.
+- **Example:**
+```
+// Include the string library
+#include <string>
+
+// Create a string variable
+string greeting = "Hello";
+
+// Output string value
+cout << greeting;
+```
+</details>

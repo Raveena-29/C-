@@ -1,26 +1,2 @@
 # C++ PRACTICALS
 
-### Write a program to compute the sum of the first n terms of the following series:
-![Capture](https://github.com/Raveena-29/Cplus-plus/assets/148243757/ae6d5855-cfc5-48c6-95ad-ba8ce7197988)
-
-```
-# include <iostream>
-#include <cmath>
-using namespace std;
-double series(int num){
-    double sum=0.0 ,ser;
-    for (int i =1 ;i<=num;++i){
-        ser=1/pow(i,i);
-        sum+=ser;
-    }
-    return sum;
-}
-int main(){
-    int num;
-    cout << "Enter the number of terms:";
-    cin>>num;
-    double result= series(num);
-    cout << result;
-    return 0;
-}
-```

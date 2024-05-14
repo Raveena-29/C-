@@ -1,3 +1,6 @@
+//Write a program to compute the sum of the first n terms of the following series:The number of terms n is to be taken from the user through the command line. If the command line argument is not found then prompt the user to enter the value of n
+
+
 #include <iostream>
 #include <cstdlib>
 using namespace std;
